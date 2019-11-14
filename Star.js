@@ -3,7 +3,7 @@
  * @Email: 861182774@qq.com
  * @Date: 2019-11-13 10:33:59
  * @LastEditors: 张文Uncle
- * @LastEditTime: 2019-11-13 15:02:49
+ * @LastEditTime: 2019-11-14 09:17:46
  * @Descripttion: 
  */
 var Star = function (opt) {
@@ -43,8 +43,8 @@ var Star = function (opt) {
                 img.src = ul.initImg || that.opt.initImg;
                 img.style.cssText = 'width:' + (ul.imgWidth || that.opt.imgWidth) + 'px;transition:all 0.5s;-moz-transition: all 0.5s;-webkit - transition: all 0.5s;';
                 li.appendChild(img);
-                u.appendChild(li)
-                u.append(' ');
+                u.appendChild(li);
+                u.appendChild(document.createTextNode(' '));
             }
             div.appendChild(u);
             that.container.appendChild(div);
